@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Hello</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<figure id="videoContainer" data-fullscreen="false">
+		<video id="video" controls preload="metadata" poster="img/1.jpg">
+			<source src="video/nature.mp4" type="video/mp4">
+			<object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=video/nature.MP4" width="1024" height="576">
+				<param name="movie" value="flash-player.swf?videoUrl=video/nature.MP4" />
+				<param name="allowfullscreen" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="flashvars" value="controlbar=over&amp;image=img/1.jpg&amp;file=flash-player.swf?videoUrl=video/nature.MP4" />
+				<img alt="Tears of Steel poster image" src="img/1.jpg" width="1024" height="428" title="No video playback possible, please download the video from the link below" />
+			</object>
+			<a href="video/nature.mp4">Download MP4</a>
+		</video>
+		<ul id="video-controls" class="controls">
+			<li><button id="playpause" type="button">Вопроизвести/Пауза</button></li>
+			<li><button id="stop" type="button">Стоп</button></li>
+			<li class="progress">
+				<progress id="progress" value="0" min="0">
+					<span id="progress-bar"></span>
+				</progress>
+			</li>
+			<li><button id="volinc" type="button">+</button></li>
+			<li><button id="voldec" type="button">-</button></li>
+
+                            <li><button id="mute" type="button">Звук/Без звука</button></li>
+			<li><button id="fs" type="button">Полный экран</button></li>
+		</ul>
+	</figure>
+	<script src="js/scriipt.js"></script>
+</body>
+</html>
